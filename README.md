@@ -39,7 +39,7 @@ node --max-old-space-size=4096 build/tests/main.js -i data/ncbiTaxonID -a 1301 -
 ##### import the package
 
 ```js
-import { parseTree } from 'taxonomy';
+import { parseTree } from 'ncbitaxonomy';
 ```
 
 ##### Invoke a Taxonomy tree object
