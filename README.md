@@ -1,4 +1,4 @@
-# taxonomyWS
+# ncbi taxonomy
 
 A package to perform operations on a NCBI taxonomy tree
 

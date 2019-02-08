@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/glaunay/taxonomyWS.git"
+    "url": "git+https://github.com/glaunay/ncbitaxonomy.git"
   },
   "author": "GL",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/glaunay/taxonomyWS/issues"
+    "url": "https://github.com/glaunay/ncbitaxonomy/issues"
   },
-  "homepage": "https://github.com/glaunay/taxonomyWS#readme",
+  "homepage": "https://github.com/glaunay/ncbitaxonomy#readme",
   "dependencies": {
     "@types/node": "^10.12.21",
     "commander": "^2.19.0",
