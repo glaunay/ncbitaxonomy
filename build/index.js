@@ -5,7 +5,7 @@ const readline = require("readline");
 const stream = require("stream");
 const assert = require("assert");
 const util = require("util");
-const logger_1 = require("./logger");
+const logger = require("winston");
 function bcpLineSplit(lineContent) {
     return lineContent.slice(0, -2).split('\t|\t');
 }
@@ -13,7 +13,7 @@ async function parseTree(pathDir) {
     let fI = await openFolderSources(pathDir);
     let myTree = new Tree();
     let nNode = await myTree.parseNodeList(fI.topology);
-    logger_1.logger.info(`${nNode} node were defined`);
+    logger.info(`${nNode} node were defined`);
     await myTree.parseNames(fI.nodeNames);
     //    console.log(fI);
     return myTree;
@@ -104,7 +104,7 @@ class Tree {
         this.nodePool[newNode.taxID] = newNode;
     }
     async parseNodeList(fStream) {
-        logger_1.logger.debug("Parsing node topology ...");
+        logger.debug("Parsing node topology ...");
         return new Promise((resolve, reject) => {
             let n = 0;
             const rl = readline.createInterface({
@@ -120,7 +120,7 @@ class Tree {
                 n += 1;
             });
             rl.on('close', () => {
-                logger_1.logger.debug("Wiring ascendancy<HERE>");
+                logger.debug("Wiring ascendancy<HERE>");
                 for (let child of this.nodes()) {
                     let parent = this.getNode(child.parentID);
                     // console.log(parent);

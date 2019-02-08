@@ -3,7 +3,7 @@ import readline = require('readline');
 import stream = require('stream');
 import assert = require('assert');
 import util = require('util');
-import { logger } from './logger';
+import logger = require('winston');
 import { join } from 'path';
 
 
