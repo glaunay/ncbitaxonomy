@@ -1,0 +1,32 @@
+{
+  "compilerOptions": {
+      "allowJs" : true,
+      "baseUrl": ".",
+      "lib": [          
+          "es2015",
+          "esnext.asynciterable"
+      ],
+      "listEmittedFiles" : true,
+      "listFiles" : false,
+      "maxNodeModuleJsDepth" : 10,  
+      "module": "commonjs",
+      "moduleResolution" : "node",
+      "outDir" : "./build/",
+      "paths": {
+          "*": [
+              "node_modules/"
+          ]
+      },
+      "preserveConstEnums" : true,
+      "removeComments" : false,
+      "target": "esnext"
+  },
+  "files": [ // path to the files to compile
+      "./ts/src/index.ts",
+      "./ts/src/logger.ts",
+      "./ts/src/tests/main.ts"
+  ],
+  "exclude" : [  
+   // "../taskobject"
+  ]
+}

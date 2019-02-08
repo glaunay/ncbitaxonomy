@@ -1,0 +1,25 @@
+{
+  "name": "ncbitaxonomy",
+  "version": "1.0.0",
+  "description": "Tree API for NCBI Taxonomy",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/glaunay/taxonomyWS.git"
+  },
+  "author": "GL",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/glaunay/taxonomyWS/issues"
+  },
+  "homepage": "https://github.com/glaunay/taxonomyWS#readme",
+  "dependencies": {
+    "@types/node": "^10.12.21",
+    "commander": "^2.19.0",
+    "glob": "^7.1.3",
+    "winston": "^3.2.1"
+  }
+}
