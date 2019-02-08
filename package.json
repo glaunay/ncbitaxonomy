@@ -2,7 +2,7 @@
   "name": "ncbitaxonomy",
   "version": "1.0.1",
   "description": "Tree API for NCBI Taxonomy",
-  "main": "index.js",
+  "main": "build/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
