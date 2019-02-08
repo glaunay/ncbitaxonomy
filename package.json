@@ -1,6 +1,6 @@
 {
   "name": "ncbitaxonomy",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Tree API for NCBI Taxonomy",
   "main": "build/index.js",
   "scripts": {
