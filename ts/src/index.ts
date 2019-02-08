@@ -4,8 +4,6 @@ import stream = require('stream');
 import assert = require('assert');
 import util = require('util');
 import logger = require('winston');
-import { join } from 'path';
-
 
 function bcpLineSplit(lineContent:string) : string[] {
     return lineContent.slice(0, -2).split('\t|\t');
@@ -59,11 +57,12 @@ Taxonomy names file (names.dmp):
         name class                              -- (synonym, common name, ...)
 */
 
-interface searchCrit {
+export interface searchCrit {
     name? : string,
     id? : string|number,
     directParent? : string|number
 }
+
 export class Tree {
     root: TaxNode;
     nodePool : { [s: string]: TaxNode } = {};
