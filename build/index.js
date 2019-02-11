@@ -63,7 +63,7 @@ class Tree {
     find(data) {
         let hits = [];
         if (data.name) {
-            let re = new RegExp('^' + data.name + '$', "g");
+            let re = new RegExp('^' + data.name + '$', "ig");
             for (let n of this.nodes()) {
                 for (let nameDatum of n.nameData) {
                     if (re.test(nameDatum.name) || re.test(nameDatum.uniqueName)) {
