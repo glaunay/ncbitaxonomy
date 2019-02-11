@@ -26,7 +26,7 @@ interface TaxonomyName {
     uniqueName: string;
     otherNames: string;
 }
-declare class TaxNode {
+export declare class TaxNode {
     childrenID: string[];
     taxID: string;
     parentID: string;

@@ -184,3 +184,4 @@ class TaxNode {
         return this.nameData.map(d => d.name);
     }
 }
+exports.TaxNode = TaxNode;

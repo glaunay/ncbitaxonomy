@@ -204,7 +204,7 @@ interface TaxonomyName {
         uniqueName:string,//                             -- the unique variant of this name if name not unique
         otherNames:string//
 }
-class TaxNode {
+export class TaxNode {
     /*
     parent: TaxNode;
     children:TaxNode[] = [];
